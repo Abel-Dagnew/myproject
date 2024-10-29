@@ -53,7 +53,7 @@ stages:
               GIT_AUTHOR_EMAIL: 'your.email@example.com'  # Change this to your email
               GIT_COMMITTER_NAME: 'Your Name'  # Change this to your name
               GIT_COMMITTER_EMAIL: 'your.email@example.com'  # Change this to your email
-              AZURE_DEVOPS_PAT: "jxnEJ8YrcDAMB40huVpV3MBB0eJdVvbZC6XFXWGfsnXXLg7DQfNbJQQJ99AJACAAAAAAArohAAASAZDOCEC9"  # Use a variable for your PAT token
+              AZURE_DEVOPS_PAT: $(AZURE_DEVOPS_PAT)  # Use a variable for your PAT token
 
   - stage: Deploy
     displayName: 'Deploy Stage'
